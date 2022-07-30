@@ -1,0 +1,13 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(#820b8a, #f18f01);
+}
+
+.title {
+  color: white;
+  font-size: 3.5rem;
+}
