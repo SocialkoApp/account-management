@@ -16,6 +16,7 @@ root.render(
       <Routes>
         <Route path="*" element={<Home />} />
         <Route path="/confirm-email/:token" element={<EmailConfirm />} />
+        <Route path="/forgot-password/:code" element={<PasswordReset />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,5 +1,12 @@
 import axios from 'axios';
 
 export const passwordApi = {
-  resetPassword() {},
+  resetPassword(code: string, newPassword: string) {
+    const body = {
+      code,
+      password: newPassword,
+    };
+
+    return axios.put('/forgot-password', body);
+  },
 };
