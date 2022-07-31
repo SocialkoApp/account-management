@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import '../assets/Style.css';
 
 export const Home: FC = () => {

@@ -12,7 +12,7 @@ export const EmailConfirm: FC = () => {
 
   useEffect(() => {
     confirmEmail();
-  }, []);
+  }, [confirmEmail]);
 
   async function confirmEmail() {
     if (token) {
