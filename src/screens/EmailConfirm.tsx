@@ -11,22 +11,22 @@ export const EmailConfirm: FC = () => {
   const [message, setMessage] = useState<string>('');
 
   useEffect(() => {
-    confirmEmail();
-  }, [confirmEmail]);
+    async function confirmEmail() {
+      if (token) {
+        try {
+          const response = await api.email.confirmEmail(token);
 
-  async function confirmEmail() {
-    if (token) {
-      try {
-        const response = await api.email.confirmEmail(token);
-
-        setMessage(response.data.message);
-        setIsLoading(false);
-      } catch (err: any) {
-        setMessage(err.response.data.message);
-        setIsLoading(false);
+          setMessage(response.data.message);
+          setIsLoading(false);
+        } catch (err: any) {
+          setMessage(err.response.data.message);
+          setIsLoading(false);
+        }
       }
     }
-  }
+
+    confirmEmail();
+  }, []);
 
   if (isLoading) {
     return (
