@@ -26,7 +26,7 @@ export const EmailConfirm: FC = () => {
     }
 
     confirmEmail();
-  }, []);
+  }, [token]);
 
   if (isLoading) {
     return (
