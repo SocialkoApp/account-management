@@ -1,31 +1,40 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand.ttf');
+}
+
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(#820b8a, #f18f01);
+  background-color: #b810c3;
 }
 
 .title {
-  color: white;
+  color: #f0f0f0;
   font-size: 3.5rem;
+  font-family: 'Quicksand';
 }
 
 .label {
-  color: white;
+  color: #f0f0f0;
   font-size: 2rem;
+  font-family: 'Quicksand';
 }
 
 .error {
-  color: rgb(175, 33, 33);
+  color: #e54b4b;
   font-size: 1.5rem;
+  font-family: 'Quicksand';
 }
 
 input {
   width: 40vw;
   padding: 12px 20px;
   margin: 8px 0;
+  font-family: 'Quicksand';
   display: inline-block;
   border: none;
   border-radius: 15px;
@@ -36,8 +45,9 @@ input {
 }
 
 button {
-  background-image: linear-gradient(45deg, #820b8a, #f18f01);
-  color: white;
+  background-color: #b810c3;
+  color: #f0f0f0;
+  font-family: 'Quicksand';
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
