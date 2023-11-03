@@ -7,6 +7,6 @@ export const passwordApi = {
       password: newPassword,
     };
 
-    return axios.put('/forgot-password', body);
+    return axios.put('/password/reset', body);
   },
 };
